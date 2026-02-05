@@ -1,1 +1,122 @@
-/* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer base */
+footer {
+  background: #000;
+  color: #fff;
+}
+
+/* Main content area */
+footer .content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Top section */
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_name {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+/* Social icons */
+.media-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.media-icons a {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.media-icons a:nth-child(1) { background: #4267B2; }
+.media-icons a:nth-child(2) { background: #1DA1F2; }
+.media-icons a:nth-child(3) { background: #E1306C; }
+.media-icons a:nth-child(4) { background: #0077B5; }
+.media-icons a:nth-child(5) { background: #FF0000; }
+
+/* Columns section */
+.link-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.link-boxes .box {
+  width: 23%;
+}
+
+.link_name {
+  font-size: 18px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* underline under headings */
+.link_name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 35px;
+  height: 2px;
+  background: #fff;
+}
+
+.box li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.box li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.box li a:hover {
+  color: #fff;
+}
+
+/* Bottom bar */
+.bottom-details {
+  background: #2c303a;
+}
+
+.bottom_text {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.bottom_text a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.bottom_text a:hover {
+  color: #fff;
+}
